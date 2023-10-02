@@ -8,7 +8,7 @@ public class FactoryProvider {
 
 	private static SessionFactory factory;
 
-	public static  SessionFactory getFactory() {
+	public static SessionFactory getFactory() {
 
 		try {
 			if (factory == null) {
@@ -17,8 +17,10 @@ public class FactoryProvider {
 			}
 		} catch (HibernateException ex) {
 			ex.printStackTrace();
-			throw new RuntimeException("Error building the SessionFactory: " + ex.getMessage(), ex);
-	        
+			throw new RuntimeException(
+					"Error building the SessionFactory: " + ex.getMessage(),
+					ex);
+
 		}
 
 		return factory;

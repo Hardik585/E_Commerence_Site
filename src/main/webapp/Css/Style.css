@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.custom-bg{
+	background-color: #2D4356!important;
+}
+
+/* Other styles for the links */
+.navbar-nav .nav-link {
+    color:#8EACCD!important;
+}
+
+/* Your custom styling for the active link */
+.navbar-nav .nav-item.active > .nav-link{
+    color:#7C81AD!important;
+    background-color: #FF3FA4!important;
+	font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover{
+	color:#FAF2D3!important;
+	font-size: 15px;
+}
+
