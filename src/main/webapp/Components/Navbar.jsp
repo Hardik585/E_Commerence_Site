@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link href="Css/Style.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -35,7 +36,7 @@
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="Register.jsp">Register</a></li>
 					<li class="nav-item"><a class="nav-link active  "
-						aria-current="page" href="SignUp.jsp">SignUp</a></li>
+						aria-current="page" href="Login.jsp">Login</a></li>
 				</ul>
 
 			</div>
