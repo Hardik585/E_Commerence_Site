@@ -37,25 +37,24 @@ public class LoginServlet extends HttpServlet {
 			// passing the value to db for checking
 			userDao = new UserDao(FactoryProvider.getFactory());
 			user = userDao.getDetailByEmailAndPassword(email, password);
-			
-			
+
 			session = request.getSession();
-			     session.setAttribute("Current-User-Type", user
-			    		 );
+			session.setAttribute("Current-User-Type", user);
 
 			if (user != null) {
-				
 
 				if (user.getUser_type().equals("admin")) {
-					
+
 					response.sendRedirect("AdminUser.jsp");
 					return;
 				} else if (user.getUser_type().equals("Normal")) {
-					
+
 					response.sendRedirect("NormalUser.jsp");
 					return;
 				} else {
-                      response.getWriter().println("We are not able to identify You " + user.getUser_type());
+					response.getWriter()
+							.println("We are not able to identify You "
+									+ user.getUser_type());
 				}
 
 			} else {
