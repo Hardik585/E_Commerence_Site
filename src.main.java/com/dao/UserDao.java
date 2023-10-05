@@ -20,7 +20,7 @@ public class UserDao {
 		User user = null;
 
 		try {
-			String query = "From User Where emial = :e and password =:password";
+			String query = "From User Where email = :e and password =:p";
 
 			Session session = factory.openSession();
 			Query<User> hibQuery = session.createQuery(query, User.class);
